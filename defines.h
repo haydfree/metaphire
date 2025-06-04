@@ -11,6 +11,7 @@
 #define GUARD_NON_POS(val)                      do { if ((val) <= 0) { goto cleanup; } } while (0)
 #define GUARD_NON_NEG(val)                      do { if ((val) >= 0) { goto cleanup; } } while (0)
 #define GUARD_NON_ZERO(val)                     do { if ((val) != 0) { goto cleanup; } } while (0)
+#define GUARD_NON_NULL(ptr)						do { if ((ptr) != NULL) { goto cleanup; } } while (0)
 #define GUARD_ERROR(expr)                       GUARD_TRUE(expr)
 #define GUARD_EQUAL(val1, val2)					do { if (val1 == val2) { goto cleanup; } } while (0)
 #define GUARD_NOT_EQUAL(val1, val2)				do { if (val1 != val2) { goto cleanup; } } while (0)
