@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include "defines.h"
+#include "metaphire.h"
 
 int
 main(void)

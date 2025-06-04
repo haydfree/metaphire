@@ -2,7 +2,7 @@ CC=						clang
 LD=						clang
 
 TARGET=					metaphire
-SRCS=					main.c
+SRCS=					main.c metaphire.c
 OBJS=					${SRCS:.c=.o}
 
 DBFLAGS=				-g3 -O0
